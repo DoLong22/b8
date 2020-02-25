@@ -1,5 +1,5 @@
 const express = require('express');
-
+const reload = require('reload');
 //template engine
 const app = express();
 
@@ -8,5 +8,7 @@ app.set('view engine','ejs') //dùng view engine gì thì đổi ejs thành tư�
 //đổi đuổi file html thành ejs
 
 app.get('/', (req, res) => res.render("home"));
-app.get('/lear',(req,res)=> res.render('lear'));
-app.listen(3000, ()=>console.log("Server started"));
+app.get('/learn',(req,res)=> res.render('learn'));
+
+reload(app)
+app.listen(3002, ()=>console.log("Server started"));
