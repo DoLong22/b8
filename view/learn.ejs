@@ -6,7 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Xin chao Long</h1>
+    <h1><%=username %></h1>
+    <% arrSubjects.forEach(element =>{%>
+        <h3><%=element %></h3>
+    <% }); %>
 
     <script src="reload/reload.js"></script>
 </body>
