@@ -19,7 +19,7 @@
   "homepage": "https://github.com/LongPeo/b8#readme",
   "dependencies": {
     "ejs": "^3.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "eslint-config-rallycoding": "^3.2.0",
